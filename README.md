@@ -13,6 +13,8 @@ Agents who paid on total at least some publicly known quantity 'F', or spent at 
 Amont the rest, first 'k' with lowest average payment are selected and forced to pay F, plus a some additional fine penalty.
 Finally, a random number drawn from normal distributon with mean 'x_mean' and deviation 'x_sigma' of new agents are added at the end of the queue and the cycle repeats.
 
+# Notes
+
 - grant number
 - authors
 - affiliation
