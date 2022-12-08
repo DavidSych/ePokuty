@@ -1,6 +1,6 @@
 # ePokuty
 
-Includes two main parts described in mode detain in their respective folders
+Includes two main parts described in more detain in their respective folders
 - basic rational strategy: agents use predefined atrategy and the result is observed
 - learning: agents learn approximate best strategy against others
 
