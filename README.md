@@ -17,6 +17,7 @@ Finally, a random number drawn from normal distributon with mean 'x_mean' and de
 - authors
 - affiliation
 - copyright/licence (special file)
+
 BRS
 - description first, run instructions later
 - don't save csv output
