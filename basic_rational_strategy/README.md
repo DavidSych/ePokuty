@@ -41,4 +41,4 @@ Outputs Total Money collected, Average money collected, Average no of sinners go
 Also output graphs: Length of queue, payment of heaven bound sinners, stats of heaven bound sinners, stats of hell bound sinners, total money collected, proportional distribution of strategy among players.
 
 
-Requirements: python3.7, matplotlib>=3.0.2, numpy>=1.16.2, pandas>=0.23.3+dfsg
+Requirements: python 3 (>=3.7), matplotlib>=3.0.2, numpy>=1.16.2, pandas>=0.23.3+dfsg
