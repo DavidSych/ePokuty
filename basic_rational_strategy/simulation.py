@@ -12,7 +12,7 @@ parse = argparse.ArgumentParser()
 parse.add_argument("--seed", default=42, type=int, help="Seed for random sampling")
 parse.add_argument("--n", default=1000, type=int, help="Length of queue at the beginning of the game")
 parse.add_argument("--F", default=50, type=int, help="Fine to pay for going to heaven.")
-parse.add_argument("--Q", default=0, type=int, help="Additional penalty for going to hell.")
+parse.add_argument("--Q", default=None, type=int, help="Additional penalty for going to hell.")
 parse.add_argument("--T", default=100, type=int, help="Time to survive in queue for going to heaven.")
 parse.add_argument("--K", default=5, type=int, help="How many people go to hell in each time step.")
 parse.add_argument("--x_mean", default=100, type=float, help="Mean number of people entering the queue at each time step.")
@@ -26,6 +26,8 @@ parse.add_argument("--total_time", default=10000, type=int, help="How many time 
 
 args = parse.parse_args([] if "__file__" not in globals() else None)
 
+if args.Q == None:
+    args.Q=args.F
 if args.n < args.K:
     raise ValueError('Everyone cannot go to hell')
 if args.prob > 1:
@@ -59,7 +61,7 @@ def main():
     rows = []
     zeropayment=0
     for i in range(args.total_time):
-        print(i,'\t',len(game.agents))
+        print('time:',i,'\tsize of queue:',len(game.agents))
         strategy = [agent.strategy for agent in game.agents]
         M=len(game.agents)-5
         extras = game.agents[-M:]
