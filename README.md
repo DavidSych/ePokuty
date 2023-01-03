@@ -36,7 +36,7 @@ number) where each S(t) is a sequence of players (sinners)  and it is
 obtained from S(t-1) by a process described in detail in file
 DESCRIPTION. A critical part of this process is that at each step t, an
 initial segment of the current sequence of sinners is admitted to hell.
-The sinners may avoid hell bz paying, and by staying long enough in the
+The sinners may avoid hell by paying, and by staying long enough in the
 sequence.
 
 ******DESCRIPTION will be basically intro to the paper**********
@@ -70,7 +70,7 @@ b. Makes a pilot implementation of Fines-Charity: here the view of legal
 experts is divided as to whether such mechanism complies with the
 current legislation.
 
-Description of Fines-Charity mechanism
+# Description of Fines-Charity mechanism
 
 ......
 
