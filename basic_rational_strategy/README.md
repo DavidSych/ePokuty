@@ -1,3 +1,5 @@
+# Description
+
 The program adds n players to the queue. Each player added has the following properties:
 + player remembers payment history
 + player has a strategy which decides what to pay in next iteration (in any iteraton player's payment increases by stratregy).
@@ -16,7 +18,7 @@ Each iteration runs as follows:
 + For each player the change of position over the last 10 iterations is considered. If the rate of this change indicates that the player goes to hell then her strategy is increased by 1 otherwise it is decreased by 1.
 + A random number of new players enter the queue. Again each new player has the same properties as the players added at the beginning of the game.
 
-**Usage**
+# Usage
 
 Run simulation.py --args
 
