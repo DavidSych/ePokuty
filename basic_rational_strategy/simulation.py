@@ -28,8 +28,8 @@ args = parse.parse_args([] if "__file__" not in globals() else None)
 
 if args.Q == None:
     args.Q=args.F
-if args.n < args.K:
-    raise ValueError('Everyone cannot go to hell')
+#if args.n < args.K:
+#    raise ValueError('Everyone cannot go to hell')
 if args.prob > 1:
     raise ValueError('Probability cannot be greater than 1')
 if args.prob < 0:
